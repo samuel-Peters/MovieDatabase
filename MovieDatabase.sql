@@ -203,4 +203,70 @@ CREATE TABLE `productioncompanies` (
   `userid` INT NOT NULL,
   `deleted` TINYINT(1) NOT NULL,
   `datedeleted` DATETIME NOT NULL,
-  `
+  `deletedby` INT NOT NULL,
+  PRIMARY KEY (`companyid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Create `rating` table
+CREATE TABLE `rating` (
+  `ratingid` INT NOT NULL AUTO_INCREMENT,
+  `rating` TINYINT(1) NOT NULL,
+  `dateadded` DATETIME NOT NULL,
+  `addedby` INT NOT NULL,
+  `deleted` TINYINT(1) NOT NULL,
+  `deletedby` TINYINT(1) NOT NULL,
+  `datedeleted` DATETIME NOT NULL,
+  PRIMARY KEY (`ratingid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Create `resolution` table
+CREATE TABLE `resolution` (
+  `resolutionid` INT NOT NULL AUTO_INCREMENT,
+  `resolutiondescription` VARCHAR(50) NOT NULL,
+  `dateadded` DATETIME NOT NULL,
+  `addedby` INT NOT NULL,
+  `deleted` TINYINT(1) NOT NULL,
+  `deletedby` TINYINT(1) NOT NULL,
+  `datedeleted` DATETIME NOT NULL,
+  PRIMARY KEY (`resolutionid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Create `role` table
+CREATE TABLE `role` (
+  `roleid` INT NOT NULL AUTO_INCREMENT,
+  `roledescription` VARCHAR(1000) NOT NULL,
+  PRIMARY KEY (`roleid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Create `star` table
+CREATE TABLE `star` (
+  `starid` INT NOT NULL AUTO_INCREMENT,
+  `firstname` VARCHAR(50) NOT NULL,
+  `lastname` VARCHAR(50) NOT NULL,
+  `dateofbirth` DATE NOT NULL,
+  `passportphoto` VARCHAR(1000) NOT NULL,
+  `nationality` VARCHAR(50) NOT NULL,
+  `addedby` INT NOT NULL,
+  `dateadded` DATETIME NOT NULL,
+  `deleted` TINYINT(1) NOT NULL,
+  `deletedby` INT NOT NULL,
+  `datedeleted` DATETIME NOT NULL,
+  PRIMARY KEY (`starid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Create `user` table
+CREATE TABLE `user` (
+  `userid` INT NOT NULL AUTO_INCREMENT,
+  `username` VARCHAR(50) NOT NULL,
+  `email` VARCHAR(100) NOT NULL,
+  `password` VARCHAR(200) NOT NULL,
+  `dateadded` DATETIME NOT NULL,
+  PRIMARY KEY (`userid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Revert character set settings
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+COMMIT;
