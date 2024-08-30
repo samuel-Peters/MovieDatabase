@@ -2,7 +2,34 @@
 -- Adding data
 
 INSERT `movietitles` (movietitle,director,releaseyear,rating,synopsis,dateadded,moviestatus,deleted,addedby)
+VALUES('Bruce Almighty','Delry Lindo',1998,7.5,'A man blames God for all his misfortunes until God gives him his place for 7 days','2024-06-05','released',0,1);
+
+INSERT `movietitles` (movietitle,director,releaseyear,rating,synopsis,dateadded,moviestatus,deleted,addedby)
 VALUES('The Matrix','Keanu Reeves',1999,8.7,'A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.','2024-06-05','released',0,1);
+
+INSERT `movietitles` (movietitle,director,releaseyear,rating,synopsis,dateadded,moviestatus,deleted,addedby)
+VALUES('Inception','Leonardo DiCaprio',2010,8.8,'A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO.','2024-06-05','released',0,1);
+
+INSERT `movietitles` (movietitle,director,releaseyear,rating,synopsis,dateadded,moviestatus,deleted,addedby)
+VALUES('The Godfather','Marlon Brando',1972,9.2,'The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.','2024-06-05','released',0,1);
+
+INSERT `movietitles` (movietitle,director,releaseyear,rating,synopsis,dateadded,moviestatus,deleted,addedby)
+VALUES('Pulp Fiction','John Travolta',1994,8.9,'The lives of two mob hitmen, a boxer, a gangster, and his wife intertwine in four tales of violence and redemption.','2024-06-05','released',0,1);
+
+INSERT `movietitles` (movietitle,director,releaseyear,rating,synopsis,dateadded,moviestatus,deleted,addedby)
+VALUES('The Dark Knight','Christian Bale',2008,9.0,'When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham.','2024-06-05','released',0,1);
+
+INSERT `movietitles` (movietitle,director,releaseyear,rating,synopsis,dateadded,moviestatus,deleted,addedby)
+VALUES('Forrest Gump','Tom Hanks',1994,8.8,'The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal, and other historical events unfold from the perspective of an Alabama man with an IQ of 75.','2024-06-05','released',0,1);
+
+INSERT `movietitles` (movietitle,director,releaseyear,rating,synopsis,dateadded,moviestatus,deleted,addedby)
+VALUES('Back to the Future','Michael J. Fox',1985,8.5,'Marty McFly, a 17-year-old high school student, is accidentally sent thirty years into the past in a time-traveling DeLorean invented by his close friend, eccentric scientist Doc Brown.','2024-06-05','released',0,1);
+
+INSERT `movietitles` (movietitle,director,releaseyear,rating,synopsis,dateadded,moviestatus,deleted,addedby)
+VALUES('Gladiator','Russell Crowe',2000,8.5,'A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.','2024-06-05','released',0,1);
+
+INSERT `movietitles` (movietitle,director,releaseyear,rating,synopsis,dateadded,moviestatus,deleted,addedby)
+VALUES('Schindler\'s List','Liam Neeson',1993,9.0,'In German-occupied Poland during World War II, Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.','2024-06-05','released',0,1);
 
 -- select statement - used to quer data from database
 SELECT * FROM movietitles
